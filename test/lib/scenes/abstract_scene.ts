@@ -32,9 +32,9 @@ export abstract class AbstractScene {
       `${this.dir}/.git/.graphite_repo_config`,
       cuteString({ trunk: 'main' })
     );
-    const userConfigPath = `${this.dir}/.git/.graphite_user_config`;
+    const userConfigPath = `${this.dir}/.git/.freephite_user_config`;
     fs.writeFileSync(userConfigPath, cuteString({ tips: false }));
-    process.env.GRAPHITE_USER_CONFIG_PATH = userConfigPath;
+    process.env.freephite_user_config_PATH = userConfigPath;
     process.env.GRAPHITE_PROFILE = '';
     this.oldDir = process.cwd();
     process.chdir(this.dir);

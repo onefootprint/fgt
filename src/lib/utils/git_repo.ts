@@ -14,7 +14,7 @@ export class GitRepo {
     opts?: { existingRepo?: boolean; repoUrl?: string }
   ) {
     this.dir = dir;
-    this.userConfigPath = path.join(dir, '.git/.graphite_user_config');
+    this.userConfigPath = path.join(dir, '.git/.freephite_user_config');
     if (opts?.existingRepo) {
       return;
     }

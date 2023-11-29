@@ -54,7 +54,7 @@ export const userConfigFactory = spiffy({
   schema,
   defaultLocations: [
     {
-      relativePath: '.graphite_user_config',
+      relativePath: '.freephite_user_config',
       relativeTo: 'USER_HOME',
     },
   ],

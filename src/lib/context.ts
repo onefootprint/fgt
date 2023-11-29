@@ -21,7 +21,7 @@ import { composeSplog, TSplog } from './utils/splog';
 import { NonInteractiveError } from './errors';
 import { gtPrompts, TPrompts } from './utils/prompts_helpers';
 
-export const USER_CONFIG_OVERRIDE_ENV = 'GRAPHITE_USER_CONFIG_PATH' as const;
+export const USER_CONFIG_OVERRIDE_ENV = 'freephite_user_config_PATH' as const;
 
 export type TContextLite = {
   splog: TSplog;
